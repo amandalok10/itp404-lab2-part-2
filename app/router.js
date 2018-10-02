@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('post', {path: '/posts/:id'}); //makes dynamic
 });
+
 
 export default Router;

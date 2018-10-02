@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |post|}}
+  <li>
+    {{#link-to "post" post.id}}
+    {{post.first}} {{post.last}}
+    {{/link-to}}
+  </li>
+  {{/each}}
+</ul>

@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('post', {path: '/products/:id'}); //makes dynamic
+  this.route('post', {path: '/users/:id'}); //makes dynamic
 });
 
 

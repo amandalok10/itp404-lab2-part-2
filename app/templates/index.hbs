@@ -2,7 +2,7 @@
   {{#each model as |post|}}
   <li>
     {{#link-to "post" post.id}}
-    {{post.name}} ${{post.price}}
+    {{post.first}} ${{post.last}}
     {{/link-to}}
   </li>
   {{/each}}

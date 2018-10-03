@@ -1,23 +1,28 @@
 import { Factory } from 'ember-cli-mirage';
 
 export default Factory.extend({
-  title(){
-    return "User";
+  title(i){
+    return `Product ${i + 1}`;
   },
 
-  first(){
-    return faker.name.firstName();
+  price(){
+    return faker.commerce.price();
   },
 
-  last(){
-    return faker.name.lastName();
+  name(){
+    return faker.commerce.productName();
   },
 
-  jobTitle(){
-    return faker.name.jobTitle();
+  color(){
+    return faker.commerce.color();
   },
 
-  phone(){
-    return faker.phone.phoneNumber();
+  material(){
+    return faker.commerce.productMaterial();
   }
+
+  // id() {
+  //   return faker.helpers.slugify(this.name);
+  // }
+
 });
